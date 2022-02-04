@@ -21,10 +21,14 @@ export interface Props {
      * Color personalizado del texto
      */
     fontColor?: string;
+    /**
+     * Color personalizado del texto
+     */
+    backgroundColor?: string;
 }
 
-export const MyLabel = ( { label = 'No Label', size = 'normal', allCaps = false, color = 'primary', fontColor }: Props ) => {
+export const MyLabel = ( { label = 'No Label', size = 'normal', allCaps = false, color = 'primary', fontColor, backgroundColor = 'transparent' }: Props ) => {
   return (
-      <span className={ `label ${ size } text-${ color }` } style={{ color: fontColor }}>{ allCaps ? label.toUpperCase() : label }</span>
+      <span className={ `label ${ size } text-${ color }` } style={{ color: fontColor, backgroundColor }}>{ allCaps ? label.toUpperCase() : label }</span>
   );
 };
