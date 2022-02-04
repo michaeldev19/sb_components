@@ -1,7 +1,7 @@
 # mdev-my-storybook-components
 
 ```
-npm i mdev-my-storybook-components
+npm i mdev-my-storybook-.components
 
 ```
 
